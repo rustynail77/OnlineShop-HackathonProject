@@ -1,7 +1,6 @@
-import products from './data/products-list.js';
+import products from '/data/products-list.js';
 
 let subTitle = 'These are some of my latest pieces for display'
-
 
 function createItemForHomePage(prod) {
     
