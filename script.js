@@ -1,4 +1,4 @@
-import products from '/data/products-list.js';
+import products from './data/products-list.js';
 
 let subTitle = 'These are some of my latest pieces for display'
 
@@ -42,6 +42,7 @@ function buildSingleItemPage(prod) {
     let description = document.createElement('p');
     description.innerText = prod.description;
 
+    // THE FOLLOWING BLOCK OF CODE IS FOR THE SHOPPING MODULE WHICH WILL BE BUILT IN THE NEXT STAGE
     let oldPrice = document.createElement('div');
     oldPrice.className = 'prev-price hide-me';
     oldPrice.innerText = prod.origPrice;
@@ -49,6 +50,7 @@ function buildSingleItemPage(prod) {
     let newPrice = document.createElement('div');
     newPrice.innerText = prod.discPrice;
     newPrice.className = 'hide-me';
+    // END OF BLOCK
 
     function addImageToGallery(i) {
         imgGallery.className = 'imgGallery';
